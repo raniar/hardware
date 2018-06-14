@@ -1,0 +1,132 @@
+body
+{
+	/* Sets the background image */
+	background-image: url("images/bgpic.jpg");
+	background-size: cover;
+	font-family: "Bookman", sans-serif;
+	margin: 75px;
+}
+/* End of Body */
+/* Style the links inside the sidenav */
+#mySidenav a
+{
+	position: absolute; /* Position them relative to the browser window */
+	right: -80px; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 100px; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 17px; /* Increase font size */
+	color: white; /* White text color */
+	border-radius: 5px 0 0 5px; /* Rounded corners on the top right and bottom right side */
+	font-family: Lucida Sans Unicode;
+}
+
+#mySidenav a:hover
+{
+	right: 0; /* On mouse-over, make the elements appear as they should */
+}
+/* The home link: 20px from the top with a green background */
+#home
+{
+	top: 50px;
+	background-color: #648B8B;
+	text-align: right;
+}
+#story
+{
+	top: 150px;
+	background-color: #147B7B; /* Blue */
+	text-align: right;
+}
+#gallery
+{
+	top: 250px;
+	background-color: #1F5252; /* Red */
+	text-align: right;
+}
+#about
+{
+	top: 350px;
+	background-color: #284240; /* Light Black */
+	text-align: right;
+}
+#sources
+{
+	top: 450px;
+	background-color: #223B3B; /* Light Black */
+	text-align: right;
+}
+/* End of Side Bar */
+h1
+{
+	/* style for the title */
+	color: white;
+	font-family: "Bookman", sans-serif;
+	text-shadow: 3px 3px 10px white;
+	text-align: center;
+	font-size: 45px;
+}
+/* End of title */
+p
+{
+	/* the style for the text under the title */
+	font-family:"Bookman", sans-serif;
+	color: white;
+	text-align: center;
+}
+/* End of description */
+.tablink
+{
+	/* Style for the selected tab. The colour of the selected tab is a light grey. */
+	background-color: #555;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 16.666%;
+}
+.tablink:hover
+{
+	/* the colour of the tabs when you hover is grey */
+	background-color: #777;
+}
+
+.tabcontent
+{
+	/* style for the colour and position of the text in the tabs */
+	color: white;
+	display: none;
+	padding: 50px;
+	text-align: center;
+}
+/* Different background colours for the tabs */
+/* the first, third and the fifth colours are a light grey teal, while the rest are dark teal */
+#Lilith
+{
+	background-color:#648B8B;
+}
+#Quinn
+{
+	background-color:#147B7B;
+}
+#Eve
+{
+	background-color:#648B8B;
+}
+#Lana
+{
+	background-color:#147B7B;
+}
+#Mavis
+{
+	background-color:#648B8B;
+}
+#Nakia
+{
+	background-color:#147B7B;
+}
+/* End of Tabs */

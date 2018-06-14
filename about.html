@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- the following is the link to the css stylesheet -->
+		<link rel="stylesheet" type="text/css" href="hardware.css"/>
+		<meta charset="UTF-8"/>
+		<title>ABOUT</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/hardwarelogo.png" />
+	</head>
+	<body class="not_index">
+		<!-- Title -->
+		<h1 class="page_title">About</h1>
+		<!-- Code for the navigation bar -->
+		<div id="mySidenav" class="sidenav">
+			<a href="index.html" id="home">Home</a>
+			<a href="story.html" id="story">Story</a>
+			<a href="gallery.html" id="gallery">Gallery</a>
+			<a href="about.html" id="about">About</a>
+			<a href="sources.html" id="sources">Sources</a>
+		</div>
+
+		<!-- Character description -->
+		<p class="description">
+			VISION is a team comprised of six members with unique and significant talents to perform our many missions. 
+			With our skills, we are able to solve any problems and break through corruption and fraud.<br>We are Lilith, Quinn, Eve, Lana, Mavis and Nakia.
+			<br>We are VISION.
+		</p>
+
+		<!-- Tabs for the characters and their information start here. -->
+		<div id="Lilith" class="tabcontent">
+			<h2>Lilith</h2>
+			<p>Lilith is 16, and is an expert investigator. She has an incredible mind and can solve mysteries in the blink of an eye.</p>
+			<img src="images/lilith.jpg" alt="Picture of Lilith" width="300" height="400">
+		</div>
+
+		<div id="Quinn" class="tabcontent">
+			<h2>Quinn</h2>
+			<p>Quinn is 16 years old. She is the head of the VISION team, and her role includes selecting targets, planning missions, 
+			and carrying out and leading those plans.</p> 
+			<img src="images/quinn.jpg" alt="Picture of Quinn" width="300" height="400">
+		</div>
+
+		<div id="Eve" class="tabcontent">
+			<h2>Eve</h2>
+			<p>Eve is 14 years old, and the team’s manager. She helps in mission-planning, as well as budgeting funds, delegating tasks, 
+			and organizing briefings and meetings.</p>
+			<img src="images/eve.jpg" alt="Picture of Eve" width="300" height="400">
+		</div>
+
+		<div id="Lana" class="tabcontent">
+			<h2>Lana</h2>
+			<p>Lana is 15 years of age and an incredibly talented spy. She can morph into any person and blend into any surrounding as quickly 
+			as lightning.</p>
+			<img src="images/lana.jpg" alt="Picture of Lana" width="300" height="400">
+		</div>
+
+		<div id="Mavis" class="tabcontent">
+			<h2>Mavis</h2>
+			<p>Mavis is 14 years old, and she is the resident computer expert. She can hack her way into just about anything, and is a 
+			fantastic programmer.</p>
+			<img src="images/mavis.jpg" alt="Picture of Mavis" width="300" height="400">
+		</div>
+
+		<div id="Nakia" class="tabcontent">
+			<h2>Nakia</h2>
+			<p>Nakia is 16 years old and the team’s combat expert. She ensures the team is able to defend and protect themselves and the organization, 
+			should the need arise.</p>
+			<img src="images/nakia.jpg" alt="Picture of Nakia" width="300" height="400">
+		</div>
+		<!-- Code for each of the tabs -->
+		<button class="tablink" onclick="openCity('Lilith', this, 'grey')" id="defaultOpen">Lilith</button>
+		<button class="tablink" onclick="openCity('Quinn', this, 'grey')">Quinn</button>
+		<button class="tablink" onclick="openCity('Eve', this, 'grey')">Eve</button>
+		<button class="tablink" onclick="openCity('Lana', this, 'grey')">Lana</button>
+		<button class="tablink" onclick="openCity('Mavis', this, 'grey')">Mavis</button>
+		<button class="tablink" onclick="openCity('Nakia', this, 'grey')">Nakia</button>
+
+		<!-- Javascript for the tabs. Citation for this code is as follows: 
+		How TO - Full Page Tabs. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_js_full_page_tabs.asp -->
+			<script>
+			function openCity(cityName,elmnt,color)
+			{
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++)
+				{
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < tablinks.length; i++)
+				{
+					tablinks[i].style.backgroundColor = "";
+				}
+				document.getElementById(cityName).style.display = "block";
+				elmnt.style.backgroundColor = color;
+			}
+			<!-- Get the element with id="defaultOpen" and click on it -->
+			document.getElementById("defaultOpen").click();
+		</script> 
+	</body>
+</html>
